@@ -31,7 +31,7 @@ body {
 	margin: 0 10vw;
 	max-width: 1300px;		/* for better experience in ultrawide monitors */
 	height: 100%;
-	border: 1px solid crimson;
+	/* border: 1px solid crimson; */
 }
 
 header {
@@ -130,4 +130,31 @@ p {
 
 	border-bottom: 1px solid var(--bold);
 	color: var(--bold);
+}
+
+.informations {
+	border: 1px solid var(--complementar);
+	border-radius: 5px;
+	text-align: left;
+
+	margin-top: 3rem;
+	padding: 1rem 2rem;
+
+	overflow: hidden; /* because of the float on .left */
+}
+.informations p {
+	font-weight: 400;
+}
+.left {
+	width: 50%;
+	float: left;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+a:active {
+	text-decoration: none;
+	color: inherit;
 }
