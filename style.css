@@ -29,7 +29,9 @@ body {
 
 .margin {
 	margin: 0 10vw;
+	max-width: 1300px;		/* for better experience in ultrawide monitors */
 	height: 100%;
+	border: 1px solid crimson;
 }
 
 header {
@@ -48,6 +50,10 @@ header h1 {
 	height: 100vh;
 
 	background-color: var(--complementar);
+}
+.mar_hero {
+	margin: 0 10vw;
+	height: 100%;
 }
 .hero h1 {
 	color: var(--dark);
@@ -81,6 +87,30 @@ header h1 {
 	flex-direction: column;
 }
 
+h2{
+	font-family: 'Spurce serif pro', serif;
+	letter-spacing: 2px;
+	font-size: 1.5rem;
+	line-height: 3rem;
+
+	margin-bottom: 1rem;
+}
+p {
+	letter-spacing: 2px;
+	line-height: 1.5rem;
+	font-size: 1rem;
+	font-weight: 600;
+}
+
 .about {
-	
+	width: 100%;
+	background-color: var(--dark);
+	padding: 5rem 0;
+
+	border-bottom: 1px solid var(--bold);
+	text-align: center;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
