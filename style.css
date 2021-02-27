@@ -49,33 +49,41 @@ header h1 {
 	width: 100%;
 	height: 100vh;
 
-	background-color: var(--complementar);
+	/* background-color: var(--complementar); */
+	background-image: url(/assets/hero_bg.jpg);
+	background-size: cover;
+	background-position: bottom;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
 }
-.mar_hero {
-	margin: 0 10vw;
-	height: 100%;
+.hero img {
+	width: 15rem;
+	border-radius: 50%;
 }
 .hero h1 {
-	color: var(--dark);
+	color: var(--light);
 	margin: 2rem 0;
 
 	font-family: 'Spurce serif pro', serif;
 	letter-spacing: 3px;
-	font-size: 2rem;
+	font-size: 4rem;
 	line-height: 3rem;
 }
 .hero p {
 	letter-spacing: 2px;
 	line-height: 1.5rem;
-	font-size: 1rem;
+	font-size: 1.5rem;
 	font-weight: 600;
 
-	text-indent: 1rem;
+	/* text-indent: 1rem; */
 	text-align: justify;
 	text-justify: inter-word;
 }
 .text_destaque {
-	color: var(--bold);
+	color: var(--complementar);
 }
 .alinhamento {
 	height: 100%;
@@ -113,4 +121,13 @@ p {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+}
+.about span {
+	font-family: 'Spurce serif pro', serif;
+	letter-spacing: 2px;
+	font-size: 1.5rem;
+	line-height: 3rem;
+
+	border-bottom: 1px solid var(--bold);
+	color: var(--bold);
 }
