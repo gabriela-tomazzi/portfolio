@@ -19,9 +19,9 @@ function changeLanguage() {
 function portHero() {
 	let h1 = document.querySelector('.hero h1');
 	h1.innerHTML = '<h1>Olá, eu sou <span class="text_destaque">Gabi</span>.</h1>';
-	
+
 	let p = document.querySelector('.hero p');
-	p.innerHTML = '<p>E eu sou uma <br> <span class="text_destaque">Desenvolvedora </span>  full stack!</p>';
+	p.innerHTML = '<p>E eu sou uma <span class="text_destaque">Desenvolvedora </span>  full stack!</p>';
 }
 function engHero() {
 	let h1 = document.querySelector('.hero h1');
