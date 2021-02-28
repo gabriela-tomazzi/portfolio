@@ -9,10 +9,11 @@ function changeLanguage() {
 	if ( i == 1) {
 		portHero();
 		portAbout();
-		// portProducts();
+		portProducts();
 	} else {
 		engHero();
 		engAbout();
+		engProducts();
 	}
 	
 }
@@ -40,10 +41,6 @@ function portAbout() {
 	let pDescription = document.querySelector('.about p');
 	pDescription.innerHTML = '<p>Eu posso criar sites simples para o seu pequeno negócio, para você mesmo, ou para qualquer outro motivo. Se você prescisar de algo assim, eu posso fazer! Em caso de você estar interessado nas tecnologias que uso, elas são HTML5, CSS3, JS e React para projetos mais complexos.</p>';
 
-	// for (let i = 0; i < pes.length; i++) {
-	// 	pes[i].innerHTML = i;
-	// }
-
 	pes[2].innerHTML = '<p class="info"><strong>Nome: </strong>Gabriela S. Tomazzi</p>';
 	pes[3].innerHTML = '<p class="info"><strong>Telefone: </strong>51 99644-2059</p>';
 	pes[4].innerHTML = '<p class="info"><strong>Comissões: </strong>Disponíveis</p>';
@@ -52,6 +49,7 @@ function portAbout() {
 	pes[7].innerHTML = '<p class="info"><strong>Origem: </strong>Brasil</p>';
 	pes[8].innerHTML = '<p class="info"><strong>Email: </strong>gabtomazzi@gmail.com</p>';
 	pes[9].innerHTML = '<p class="info"><strong>Github: </strong><a target="_blank" href="https://github.com/gabriela-tomazzi">Clique!</a></p>';
+
 }
 function engAbout() {
 	let h2 = document.querySelector('.about h2');
@@ -68,5 +66,12 @@ function engAbout() {
 	pes[7].innerHTML = '<p class="info"><strong>Location: </strong>Brazil</p>';
 	pes[8].innerHTML = '<p class="info"><strong>Email: </strong>gabtomazzi@gmail.com</p>';
 	pes[9].innerHTML = '<p class="info"><strong>Github: </strong><a target="_blank" href="https://github.com/gabriela-tomazzi">Click me!</a></p>';
-	
+
+}
+
+function portProducts() {
+
+}
+function engProducts() {
+
 }
