@@ -15,7 +15,6 @@
 		font-size: 87.5%;
 	}
 }
-
 * {
 	margin: 0;
 	padding: 0;
@@ -223,4 +222,10 @@ a:active {
 	font-size: 1.5rem;
 	line-height: 1.5rem;
 	margin: 0.5rem;
+}
+
+@media(max-width: 720px) {
+	html {
+		font-size: 87.5%;
+	}
 }
