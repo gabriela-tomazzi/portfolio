@@ -70,8 +70,30 @@ function engAbout() {
 }
 
 function portProducts() {
+	let h2 = document.querySelector('.products > h2');
+	h2.innerText = 'O que poso fazer por você?';
 
+	let h3s = document.querySelectorAll('h3');
+	h3s[0].innerText = 'Manuteção para sites existentes';
+	h3s[1].innerText = 'Criar websites!';
+	h3s[2].innerText = 'Aplicações desktop';
+
+	let ps = document.getElementsByClassName('catalogP');
+	ps[0].innerText = 'Se o seu projeto não esta funcionando normalmente, precisa de um reparo, redesign ou uma nova função.';
+	ps[1].innerText = 'Você pose contratar um designer, ou se achar meus projetos agradáveis ao olhar, eu posso faze-los. Sou flexível a preços e datas.';
+	ps[2].innerHTML = '<p class="catalogP"> <s>Usando seu site pré-existente, ou um completamente novo.</s> <br> Em breve! </p>';
 }
 function engProducts() {
+	let h2 = document.querySelector('.products > h2');
+	h2.innerText = 'What can I do for you?';
 
+	let h3s = document.querySelectorAll('h3');
+	h3s[0].innerText = 'Maintein already existing sites';
+	h3s[1].innerText = 'Create Websites!';
+	h3s[2].innerText = 'Desktop applications';
+
+	let ps = document.getElementsByClassName('catalogP');
+	ps[0].innerText = 'If your project is not working properly, need a quick repair, redesign, or you need a new feature.';
+	ps[1].innerText = 'You can hire a designer, or if my designs please your eyes, I can do them. I\'m flexible to prices and dates.';
+	ps[2].innerHTML = '<p class="catalogP"> <s>Of your already existing project, or a brand new.</s> <br> Coming soon! </p>';
 }
