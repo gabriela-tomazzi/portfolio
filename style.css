@@ -4,17 +4,6 @@
 	--dark: #2D3047;
 	--light: #E4DCDF;
 }
-
-@media(max-width: 1080px) {
-	html {
-		font-size: 93.75%;
-	}
-}
-@media(max-width: 720px) {
-	html {
-		font-size: 87.5%;
-	}
-}
 * {
 	margin: 0;
 	padding: 0;
@@ -195,7 +184,7 @@ a:active {
 	padding: 1rem;
 	margin: 3rem 0.8rem 0;
 	max-width: 290px;
-	height: 17rem;
+	height: 18rem;
 
 	background-color: var(--complementar);
 	color: var(--dark);
@@ -209,7 +198,6 @@ a:active {
 }
 .bg_bold {
 	background-color: var(--bold);
-	flex: 1;
 }
 .product p {
 	margin-top: 1rem;
@@ -224,8 +212,57 @@ a:active {
 	margin: 0.5rem;
 }
 
+
+
+@media(max-width: 1080px) {
+	html {
+		font-size: 93.75%;
+	}
+}
+
 @media(max-width: 720px) {
 	html {
 		font-size: 87.5%;
 	}
+
+	.product {
+		height: 20rem;
+	}
+	
+}
+@media(max-width: 400px) {
+	html {
+		font-size: 80%;
+	}
+	p {
+		letter-spacing: 2px;
+		line-height: 1.2rem;
+		font-size: 1.2rem;
+		font-weight: 600;
+	
+		/* text-indent: 1rem; */
+		text-align: justify;
+		text-justify: inter-word;
+	}
+
+	.hero {
+		text-align: center;
+	}
+	.hero h1 {
+		margin: 1rem 0;
+	
+		font-family: 'Spurce serif pro', serif;
+		letter-spacing: 3px;
+		font-size: 2.5rem;
+		line-height: 3rem;
+	}
+	.hero p {
+		text-align: center;
+	}
+	.hero button p{
+		font-size: 1rem;
+		font-weight: 400;
+		text-align: center;
+	}
+	
 }
