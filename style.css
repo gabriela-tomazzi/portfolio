@@ -75,15 +75,17 @@ header h1 {
 	color: var(--complementar);
 }
 .hero > button {	/* maybe position this in the corner */
-	margin-top: 1rem;
+	margin-top: 2rem;
 	padding: 0.3rem;
 	width: 11rem;
+
 	font-size: 1rem;
 	font-weight: 400;
+	text-decoration: underline;
 
 	background-color: rgba(0, 0, 0, 0);
 	color: var(--light);
-	border: 0;
+	border: 0 !important;
 	cursor: pointer;
 }
 .alinhamento {
@@ -235,6 +237,7 @@ a:active {
 	html {
 		font-size: 80%;
 	}
+
 	p {
 		letter-spacing: 2px;
 		line-height: 1.2rem;
@@ -266,4 +269,35 @@ a:active {
 		text-align: center;
 	}
 	
+	.about p{
+		text-indent: 20px;
+		text-align: center;
+	}
+	.about span {
+		font-family: 'Spurce serif pro', serif;
+		letter-spacing: 2px;
+		font-size: 1.5rem;
+		line-height: 3rem;
+	
+		color: var(--bold);
+		border-bottom: 1px solid var(--dark);
+	}
+	
+	.informations {
+		max-width: 90%;
+		margin: auto;
+		margin-top: 2rem;
+	}
+	.informations p {
+		font-weight: 400;
+		margin: 1rem;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-direction: column;
+	}
+	.left {
+		width: 100%;
+		float: none;
+	}
 }
