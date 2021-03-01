@@ -2,6 +2,7 @@
 	--bold: #ebd1ad;
 	--complementar: #86A397;
 	--dark: #2D3047;
+	--darker: #202232;
 	--light: #E4DCDF;
 	/* -bold: #A86F61 #B56576; */
 }
@@ -116,7 +117,7 @@ p {
 
 .about {
 	width: 100%;
-	background-color: var(--complementar);
+	background-color: var(--darker);
 	padding: 5rem 0;
 
 	text-align: center;
@@ -131,11 +132,11 @@ p {
 	font-size: 1.5rem;
 	line-height: 3rem;
 
-	color: var(--bold);
-	border-bottom: 1px solid var(--dark);
+	color: var(--complementar);
+	border-bottom: 1px solid var(--complementar);
 }
 .about strong {
-	color: var(--dark);
+	color: var(--complementar);
 }
 
 .informations {
@@ -176,7 +177,7 @@ a:active {
 	flex-direction: column;
 }
 .products h2 {
-	color: var(--bold);
+	color: var(--complementar);
 	border-bottom: 1px solid var(--complementar);
 }
 .catalog {
