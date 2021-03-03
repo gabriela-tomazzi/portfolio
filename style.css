@@ -225,13 +225,8 @@ a:active {
 	margin: 0.5rem;
 }
 
-/* @keyframes fading{		may use later in the certificated session
-	0% {opacity:0}
-	100% {opacity:1}
-} */
-
 @keyframes comefromtop {
-	from{top:-1000px;opacity:0} 
+	from{top:-500px;opacity:0} 
 	to{top:0;opacity:1}
 }
 
