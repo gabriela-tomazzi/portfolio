@@ -24,17 +24,6 @@ body {
 	/* border: 1px solid crimson; */
 }
 
-header {
-	text-align: center;
-	background-color: var(--light);
-}
-header h1 {
-	font-family: 'Spurce serif pro', serif;
-	color: var(--dark);
-	letter-spacing: 6px;
-	font-size: 2.5rem;
-}
-
 .hero {
 	width: 100%;
 	height: 100vh;
@@ -53,6 +42,10 @@ header h1 {
 	width: 15rem;
 	border-radius: 50%;
 	border: 2px solid var(--bold);
+
+	position: relative;		/* not to future self: not inutile, the animation uses top: property */
+	animation-name: comefromtop;
+	animation-duration: 1s;
 }
 .hero h1 {
 	color: var(--light);
@@ -62,6 +55,10 @@ header h1 {
 	letter-spacing: 3px;
 	font-size: 4rem;
 	line-height: 3rem;
+
+	position: relative;
+	animation-name: comefromtop;
+	animation-duration: 0.7s;
 }
 .hero p {
 	letter-spacing: 2px;
@@ -72,6 +69,10 @@ header h1 {
 	/* text-indent: 1rem; */
 	text-align: justify;
 	text-justify: inter-word;
+
+	position: relative;
+	animation-name: comefromtop;
+	animation-duration: 0.5s;
 }
 .text_destaque {
 	color: var(--complementar);
@@ -89,6 +90,10 @@ header h1 {
 	color: var(--light);
 	border: 0 !important;
 	cursor: pointer;
+
+	position: relative;
+	animation-name: comefromtop;
+	animation-duration: 0.4s;
 }
 .alinhamento {
 	height: 100%;
@@ -203,6 +208,9 @@ a:active {
 }
 .bg_bold {
 	background-color: var(--bold);
+	animation-name: bgcolor;
+	animation-duration: 10s;
+	animation-iteration-count: infinite;
 }
 .product p {
 	margin-top: 1rem;
@@ -217,7 +225,15 @@ a:active {
 	margin: 0.5rem;
 }
 
+/* @keyframes fading{		may use later in the certificated session
+	0% {opacity:0}
+	100% {opacity:1}
+} */
 
+@keyframes comefromtop {
+	from{top:-1000px;opacity:0} 
+	to{top:0;opacity:1}
+}
 
 @media(max-width: 1080px) {
 	html {
