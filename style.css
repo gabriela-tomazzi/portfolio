@@ -29,6 +29,7 @@ h1 {
 	font-size: 3rem;
 	line-height: 50px;
 	letter-spacing: 0.5rem;
+	display: inline;
 }
 h2 {
 	font-size: 1.5rem;
@@ -54,6 +55,9 @@ header h1 {
 header span::after {
 	content: '|';
 	animation: blink 0.5s infinite;
+}
+header .contact {
+	margin-top: 1rem;
 }
 
 .products {
@@ -88,4 +92,18 @@ header span::after {
 @keyframes blink {
 	0%, 100%{opacity: 1;}
 	70%{opacity: 0;}
+}
+
+@media(max-width: 600px) {
+	html {
+		font-size: 85%;
+	}
+
+	header h1 {
+		display: block;
+	}
+
+	.products-grid {
+		grid-template: 1fr 1fr 1fr / 1fr;
+	}
 }
