@@ -4,84 +4,49 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Gabi Tomazzi | portfólio</title>
+	<title>Gabriela Tomazzi</title>
 
 	<link rel="stylesheet" href="style.css">
 	<link rel="preconnect" href="https://fonts.gstatic.com">
-	<link href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro:wght@400;600&display=swap" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap" rel="stylesheet"> 
+	<link href="https://fonts.googleapis.com/css2?family=Alegreya&family=Crete+Round&display=swap" rel="stylesheet">  
 </head>
 <body>
 	
-	<!-- <header>
-		<h1>Gabriela Tomazzi</h1>
-	</header> -->
+	<header>
 
-	<div class="hero">
+		<div class="flex">
+			<h1>I'm <span id="changeText">Gabi!</span></h1>
+			<div class="contact">Icons for contact here</div>
+		</div>
 
-		<img src="assets/me.jpg" alt="picture of me">
-		<h1>Hi, I'm <span class="text_destaque">Gabi</span>.</h1>
-		<p>I am a full stack <span class="text_destaque"> developer</span>!</p>
-
-		<button id="language" onclick="changeLanguage()">Mudar língua</button>
-	</div> <!-- hero -->
+	</header>
 
 	<main>
 
-		<section class="about">
-			<div class="margin">
-
-				<h2> <span>About me</span> </h2>
-
-				<div class="informations">
-
-					<div class="left">
-						<p><strong>Name: </strong>Gabriela S. Tomazzi</p>
-						<p><strong>Phone: </strong>+55 51 99644-2059</p>
-						<p><strong>Freelancers: </strong>Avaliable</p>
-						<p><strong>Years of experience: </strong>1</p>
-					</div>
-					<div class="right">
-						<p><strong>Age: </strong>16</p>
-						<p><strong>Location: </strong>Brazil</p>
-						<p><strong>Email: </strong>gabtomazzi@gmail.com</p>
-						<p><strong>Github: </strong><a target="_blank" href="https://github.com/gabriela-tomazzi">Click me!</a></p>
-					</div>
-
-				</div> <!-- informations -->
-
-			</div>
-		</section>
-
 		<section class="products">
-			<h2>What can I do for you?</h2>
-
-			<div class="catalog">
-				<div class="product">
-					<h3>Maintein already existing sites</h3>
-					<p class="catalogP">If your project is not working properly, need a quick repair, redesign, or you need a new feature.</p>
-				</div>
-
-				<div class="product bg_bold">
-					<h3>Create Websites!</h3>
-					<p class="catalogP">You can hire a designer, or if my designs please your eyes, I can do them. I'm flexible to prices and dates.</p>
-				</div>
-
-				<div class="product">
-					<h3>Desktop applications</h3>
-					<!-- <p>Of your already existing project, or a brand new, I don't have much experience in this area yet, so my prices are pretty cheap.</p> -->
-					<p class="catalogP"> <s>Of your already existing project, or a brand new.</s> <br> Coming soon! </p>
-				</div>
-			</div>	<!-- catalog -->
-
-		</section>
-
-		<!-- <section class="certificacoes">
 			<div class="margin">
-				<h2>My academic information</h2>
-				<p>you can see more <a href="#">here</a></p>
-			</div>
-		</section> -->
+
+				<div class="products-grid">
+					<div class="product prod1">
+						<img src="assets/code-24px.svg">
+						<h2>Maintence</h2>
+						<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet eaque ullam unde atque maxime? Incidunt, repellat eos. Asperiores deserunt quo sequi rerum saepe, voluptas nam!</p>
+					</div>
+					<div class="product prod2">
+						<img src="assets/code-24px.svg">
+						<h2>Web Development</h2>
+						<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas illum minus, blanditiis aliquam ratione quaerat est accusantium reprehenderit. Architecto, nihil?</p>
+					</div>
+					<div class="product prod3">
+						<img src="assets/code-24px.svg">
+						<h2>Destktop Apps</h2>
+						<p><s>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque quam reiciendis, accusamus ea a corporis.</s></p>
+						<p>Coming soon!</p>
+					</div>
+				</div>
+
+			</div> <!-- margin -->
+		</section>
 
 	</main>
 
