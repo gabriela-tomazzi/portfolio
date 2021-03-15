@@ -9,9 +9,14 @@
 	padding: 0;
 }
 body {
-	font-family: 'Crete Round', serif;
+	font-family: 'Alegreya', serif;
 	background-color: var(--darker);
 	color: var(--light);
+}
+
+::selection {
+	background-color: var(--brown);
+	color: var(--darker);
 }
 
 .margin {
@@ -26,25 +31,32 @@ body {
 }
 
 h1 {
-	font-size: 3rem;
-	line-height: 50px;
+	font-size: 3.5rem;
+	line-height: 108px;
 	letter-spacing: 0.5rem;
 	display: inline;
+	font-family: 'Crete Round', serif;
 }
 h2 {
 	font-size: 1.5rem;
+	font-family: 'Crete Round', serif;
 }
-p {
-	font-family: 'Alegreya', serif;
+p, span {
 	font-size: 1.2rem;
 	line-height: 26px;
+}
+
+a {
+	color: inherit;
+	font-family: inherit;
+	text-decoration: none;
 }
 
 header {
 	height: 100vh;
 
 	background: #313131;
-	background: radial-gradient(circle, var(--gray) 0%, var(--darker) 80%);
+	background: radial-gradient(circle, var(--gray) 0%, var(--darker) 65%);
 }
 header .flex {
 	height: 100vh;
@@ -52,17 +64,20 @@ header .flex {
 header h1 {
 	color: var(--brown);
 }
-header span::after {
-	content: '|';
+header h1:last-of-type::after {
+	content: '_';
 	animation: blink 0.5s infinite;
 }
 header .contact {
 	margin-top: 1rem;
 }
+.contact a {
+	width: 40px;
+}
 
 .products {
-	padding: 7rem 1rem;
-	
+	padding: 10rem 1rem;
+	text-align: center;
 	background-color: var(--darker);
 }
 .products-grid {
@@ -78,6 +93,7 @@ header .contact {
 }
 .products-grid .product:hover {
 	filter: brightness(1.2);
+	transition: filter 0.2s;
 }
 .product img {
 	height: 50px;
@@ -89,18 +105,50 @@ header .contact {
 	color: var(--brown);
 } 
 
+#contact {
+	background-color: var(--brown);
+	padding: 5rem 0;
+	/* text-align: center; */
+	clear:both;
+	overflow: hidden;
+}
+#contact .grid_contact {
+	display: grid;
+	grid-template: 1fr / 1fr 1fr 1fr;
+	align-items: center;
+}
+.form_of_contact {
+	text-align: center;
+}
+.form_of_contact > img {
+	transform: translateY(10%);
+}
+.form_of_contact > span {
+	font-family: 'Crete Round', serif;
+	color: var(--darker);
+	font-size: 1.5rem;
+}
+
+.my_work {
+	padding: 7rem 0;
+}
+.my_work h1 {
+	writing-mode:vertical-rl;
+}
+
 @keyframes blink {
 	0%, 100%{opacity: 1;}
-	70%{opacity: 0;}
+	90%{opacity: 0;}
 }
 
 @media(max-width: 600px) {
 	html {
-		font-size: 85%;
+		font-size: 93%;
 	}
 
-	header h1 {
-		display: block;
+	h1 {
+		font-size: 2.5rem;
+		line-height: 60px;
 	}
 
 	.products-grid {
