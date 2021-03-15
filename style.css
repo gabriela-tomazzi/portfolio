@@ -151,7 +151,14 @@ header .contact {
 		line-height: 60px;
 	}
 
+	.products h1 {
+		margin-bottom: 2rem;
+	}
 	.products-grid {
 		grid-template: 1fr 1fr 1fr / 1fr;
+	}
+
+	.grid_contact {
+		grid-template: 1fr 1fr 1fr / 1fr 1fr;
 	}
 }
