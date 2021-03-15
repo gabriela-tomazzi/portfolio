@@ -1,4 +1,4 @@
-let span = document.getElementById('changeText');
+let text_change = document.getElementById('changeText');
 
 let words = [
 	'Developer.',
@@ -17,7 +17,7 @@ function typeWritter() {
 
 	currentText = words[count];
 	letter = currentText.slice(0, ++index);		//letter is sliced 0, 0 then 0, 1 0, 2 ...
-	span.textContent = letter;
+	text_change.textContent = letter;
 
 	if(letter.length === currentText.length) {	// if the letters are all writed, go to the second word
 		count++;
