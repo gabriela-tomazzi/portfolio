@@ -1,5 +1,7 @@
 let text_change = document.getElementById('changeText');
 
+const target = document.querySelectorAll('[data-anime]');
+
 let words = [
 	'Developer.',
 	'Designer.',
@@ -28,3 +30,21 @@ function typeWritter() {
 }
 
 typeWritter();
+
+function animeScroll() {
+	const windowTop = window.pageYOffset + (window.innerHeight * 0.75);
+
+	target.forEach(function(elem) {
+		if ((windowTop) > elem.offsetTop) {
+			console.log(elem);
+			elem.classList.add('animate');
+		} else {
+			elem.classList.remove('animate');
+
+		}
+	})
+}
+
+window.addEventListener('scroll', function() {
+	animeScroll();
+})

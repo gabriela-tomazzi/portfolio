@@ -130,7 +130,7 @@ header .contact {
 }
 
 .certificates {
-	padding: 7rem 0;
+	padding: 7rem 2rem;
 	text-align: center;
 }
 .certificates_grid {
@@ -152,6 +152,18 @@ header .contact {
 }
 [class *= 'certificate'] img {
 	width: 100%;
+}
+
+[data-anime] {
+	opacity: 0;
+	transform: .5s;
+}
+[data-anime="left"] {
+	transform: translateX(-50%);
+}
+[data-anime].animate {
+	opacity: 1;
+	transform: translateX(0);
 }
 
 @keyframes blink {
