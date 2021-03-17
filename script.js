@@ -32,7 +32,7 @@ function typeWritter() {
 typeWritter();
 
 function animeScroll() {
-	const windowTop = window.pageYOffset + (window.innerHeight * 0.75);
+	const windowTop = window.pageYOffset + (window.innerHeight * 0.60);
 
 	target.forEach(function(elem) {
 		if ((windowTop) > elem.offsetTop) {
@@ -45,6 +45,6 @@ function animeScroll() {
 	})
 }
 
-window.addEventListener('scroll', function() {
+setTimeout(window.addEventListener('scroll', function() {
 	animeScroll();
-})
+}), 400)
