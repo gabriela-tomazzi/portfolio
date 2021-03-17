@@ -129,11 +129,29 @@ header .contact {
 	font-size: 1.5rem;
 }
 
-.my_work {
+.certificates {
 	padding: 7rem 0;
+	text-align: center;
 }
-.my_work h1 {
+.certificates_grid {
+	display: grid;
+	grid-template-areas:
+	'cer1 cer1'
+	'cer2 cer2';
+	gap: 50px;
+}
+.certificates h1 {
 	writing-mode:vertical-rl;
+	float: left;
+}
+.certificate1 {
+	grid-area: 'cer1';
+}
+.certificate2 {
+	grid-area: 'cer2';
+}
+[class *= 'certificate'] img {
+	width: 100%;
 }
 
 @keyframes blink {
@@ -159,6 +177,16 @@ header .contact {
 	}
 
 	.grid_contact {
-		grid-template: 1fr 1fr 1fr / 1fr 1fr;
+		grid-template: 1fr 1fr 1fr / 1fr !important;
+		gap: 50px;
+	}
+
+	.certificates {
+		padding: 7rem 1rem;
+	}
+	.certificates_grid {
+		grid-template-areas:
+		'cer1'
+		'cer2';
 	}
 }
