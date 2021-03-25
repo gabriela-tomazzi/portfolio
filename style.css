@@ -1,8 +1,8 @@
 :root {
-	--light: #F0ECEA;
-	--brown: #B88B71;
-	--gray: #313131;
-	--darker: #1E2225;
+	--light: #f8f4e1;
+	--bold: #00adb5;
+	--dark: #393e46;
+	--darker: #33313a;
 }
 * {
 	margin: 0;
@@ -16,7 +16,7 @@ body {
 }
 
 ::selection {
-	background-color: var(--brown);
+	background-color: var(--bold);
 	color: var(--darker);
 }
 
@@ -44,6 +44,7 @@ h2 {
 }
 p, span {
 	font-size: 1.2rem;
+	font-weight: bold;
 	line-height: 26px;
 }
 
@@ -56,14 +57,13 @@ a {
 header {
 	height: 100vh;
 
-	background: #313131;
-	background: radial-gradient(circle, var(--gray) 0%, var(--darker) 65%);
+	background: radial-gradient(circle, var(--dark) 0%, var(--darker) 65%);
 }
 header .flex {
 	height: 100vh;
 }
 header h1 {
-	color: var(--brown);
+	color: var(--bold);
 }
 header h1:last-of-type::after {
 	content: '_';
@@ -90,6 +90,7 @@ header .contact {
 .products-grid .product {
 	padding: 1rem;
 	background-color: var(--light);
+	border-radius: 20px;
 	box-shadow: 0 0 20px 5px var(--darker);
 }
 .products-grid .product:hover {
@@ -100,16 +101,15 @@ header .contact {
 	height: 50px;
 }
 .products-grid .prod2 {
-	background-color: var(--brown);
+	background-color: var(--bold);
 } 
 .products-grid .prod1, .products-grid .prod3 {
-	color: var(--brown);
+	color: var(--bold);
 } 
 
 #contact {
-	background-color: var(--brown);
+	background-color: var(--bold);
 	padding: 5rem 0;
-	/* text-align: center; */
 	clear:both;
 	overflow: hidden;
 }
@@ -133,6 +133,9 @@ header .contact {
 .certificates {
 	padding: 7rem 2rem;
 	text-align: center;
+}
+.certificates img {
+	border-radius: 20px;
 }
 .certificates_grid {
 	display: grid;
