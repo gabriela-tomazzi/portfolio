@@ -1,15 +1,18 @@
 let modeSwitcher = document.querySelector('#switcher');
 modeSwitcher.addEventListener('click', switchMode)
-d = 0
+var d = 0;
 
 function switchMode() {
 	if(d == 0) {
 		document.documentElement.setAttribute('data-theme', 'dark');
-		d = 1;
 		modeSwitcher.textContent = 'Light Mode Switcher';
+		localStorage.setItem('d', d);
+		// TODO
+		d = 1;
 	} else {
 		document.documentElement.setAttribute('data-theme', 'light');
 		modeSwitcher.textContent = 'Dark Mode Switcher';
+		localStorage.setItem('d', d);
 		d = 0;
 	}
 }
