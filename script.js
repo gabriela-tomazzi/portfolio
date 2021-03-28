@@ -6,13 +6,12 @@ function switchMode() {
 	if(d == 0) {
 		document.documentElement.setAttribute('data-theme', 'dark');
 		modeSwitcher.textContent = 'Light Mode Switcher';
-		localStorage.setItem('d', d);
-		// TODO
+		localStorage.setItem('d', '0');
 		d = 1;
 	} else {
 		document.documentElement.setAttribute('data-theme', 'light');
 		modeSwitcher.textContent = 'Dark Mode Switcher';
-		localStorage.setItem('d', d);
+		localStorage.setItem('d', '1');
 		d = 0;
 	}
 }

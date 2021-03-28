@@ -12,15 +12,94 @@
 	<link href="https://fonts.googleapis.com/css2?family=Crete+Round&family=Lato&display=swap" rel="stylesheet"> 
 </head>
 <body>
-	<!-- how it works: briefing -> designing/coding -> deliver + adjusts -->
 	<!-- certificates -->
 	<!-- So, what can I do for you? desktop...obs: solid with big gap, grid -->
 
-	WIP
+	<header>
+		<div class="margin">
+			<nav>
+
+				<div class="links">
+					<a href="#how">How It Works?</a>
+					<a href="#gallery">Can I Help?</a>
+				</div> <!-- .links -->
+				<h3>Gabi S.<br> Tomazzi</h3>
+				<div class="call-container">
+					<a href="index.html"> <- Back</a>
+				</div>
+			</nav>
+
+			<div class="header-flex">
+				
+				<div class="header-text">
+					<h1>I can code the solution to your problem</h1>
+				</div>
+				<img src="assets/code.jpg" alt="My photo">
+			</div> <!-- .header-flex -->
+
+		</div> <!-- .margin -->
+
+	</header>
+
+	<main>
+
+		<section class="certificates">
+			<div class="margin">
+				<h2>What Do I Know?</h2>
+			</div> <!-- .margin -->
+		</section>
+
+		<section id="ido">
+			<div class="margin">
+				<h2>So, What can I do?</h2>
+
+				<div class="ido-grid">
+
+					<div class="ido-item">
+						<h3>Websites</h3>
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim provident quasi, quia maxime tempora hic.</p>
+					</div>
+					<div class="ido-item">
+						<h3>Websites</h3>
+						<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id, ad tempore obcaecati quas rem cum doloribus cupiditate aliquid ratione animi?</p>
+					</div>
+					<div class="ido-item">
+						<h3>Websites</h3>
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae veniam necessitatibus odit minus asperiores nesciunt!</p>
+					</div>
+
+				</div> <!-- .ido-grid -->
+			</div> <!-- .margin -->
+		</section>
+
+		<section id="how">
+			<div class="margin">
+				<h2>How It Works?</h2>
+
+				<div class="how-grid">
+
+					<div class="method">
+						<h3>Briefing</h3>
+						<p>Where we'll talk about you, your audience, and what you want.</p>
+					</div>
+					<div class="method">
+						<h3>Design / Coding</h3>
+						<p>Here, I'll do my part and make everything like you wanted.</p>
+					</div>
+					<div class="method">
+						<h3>Deliver + Adjusts</h3>
+						<p>Finally, time to get your own website online, and I can help with that too.</p>
+					</div>
+
+				</div> <!-- .how-grid -->
+			</div> <!-- .margin -->
+		</section>
+
+	</main>
 
 
 	<script>
-		let d = localStorage.getItem('d', d);
+		let d = localStorage.getItem('d');
 
 		if(d == 0) {
 			document.documentElement.setAttribute('data-theme', 'dark');
