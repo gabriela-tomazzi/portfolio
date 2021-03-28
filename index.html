@@ -1,100 +1,61 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Gabriela Tomazzi</title>
+	<title>Gabi Tomazzi</title>
 
 	<link rel="stylesheet" href="style.css">
 	<link rel="preconnect" href="https://fonts.gstatic.com">
-	<link href="https://fonts.googleapis.com/css2?family=Alegreya&family=Crete+Round&display=swap" rel="stylesheet">  
+	<link href="https://fonts.googleapis.com/css2?family=Crete+Round&family=Lato&display=swap" rel="stylesheet"> 
 </head>
 <body>
-	
 	<header>
+		<div class="margin">
+			<nav>
 
-		<div class="flex">
-			<h1>I am</h1> <h1 id="changeText">Gabi!</h1>
-			<div class="contact"> <a href="#contact"><p>Contact-me</p></a> </div>
-		</div> <!-- flex-->
+				<div class="links">
+					<a href="#about">About</a>
+					<a href="#gallery">Gallery</a>
+				</div> <!-- .links -->
+				<h3>Gabi S.<br> Tomazzi</h3>
+				<div class="call-container">
+					<a href="#contact">Get started</a>
+					<!-- maybe do another html to show desktop apps, websites and maintence, and the forms of contact -->
+				</div>
+
+
+			</nav>
+
+			<div class="header-flex">
+
+				<img src="assets/me.jpg" alt="My photo">
+				<div class="header-text">
+					<h1>I create</h1> <h3> websites for you, so you can focus in what you are good at.</h3>
+				</div>
+			</div> <!-- .header-flex -->
+
+		</div> <!-- .margin -->
 
 	</header>
 
 	<main>
 
-		<section class="products">
+		<section id="gallery">
 			<div class="margin">
+				<div class="gallery-grid">
 
-				<h1 data-anime="right">what can I do for you?</h1>
+					<p>Svg animation</p>
+					<p> </p>
+					<p id="switcher">Dark mode switcher</p> <!-- change to light mode switcher in js -->
+					<h2>I'm a junior dev, and here is what I can do:</h2>
+					<p>Animated Scroll</p>
+					<p>Animations</p>
+					<p>Placeholder</p>
 
-				<div class="products-grid">
-					<div class="product prod1" data-anime="left">
-						<img src="assets/engineering-24px.svg">
-						<h2>Maintence</h2>
-						<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet eaque ullam unde atque maxime? Incidunt, repellat eos. Asperiores deserunt quo sequi rerum saepe, voluptas nam!</p>
-					</div>
-					<div class="product prod2" data-anime="left">
-						<img src="assets/code-24px.svg">
-						<h2>Web Development</h2>
-						<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas illum minus, blanditiis aliquam ratione quaerat est accusantium reprehenderit. Architecto, nihil?</p>
-					</div>
-					<div class="product prod3" data-anime="left">
-						<img src="assets/computer-24px.svg">
-						<h2>Destktop Apps</h2>
-						<p><s>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque quam reiciendis, accusamus ea a corporis.</s></p>
-						<p>Coming soon!</p>
-					</div>
-				</div>
-
-			</div> <!-- margin -->
-		</section>
-
-		<section id="contact" data-anime="right">
-			<div class="margin">
-
-				<div class="grid_contact">
-
-					<div class="form_of_contact">
-						<img src="assets/email-24px.svg" alt="email icon">
-						<span>E-mail:</span>
-						<p>gabtomazzi@gmail.com</p>
-					</div>
-					<div class="form_of_contact">
-						<img src="assets/phone-24px.svg" alt="phone icon">
-						<span>Phone:</span>
-						<p>+55 51 99644-2059</p>
-					</div>
-					<div class="form_of_contact">
-						<img src="assets/launch-24px.svg" alt="hyperlink icon">
-						<span>Github:</span>
-						<p><a target="_blank" href="https://github.com/gabriela-tomazzi">github.com/gabriela-tomazzi</a></p>
-					</div>
-	
-				</div>
-	
-			</div> <!-- margin -->
-		</section>
-
-		<section class="certificates">
-			
-			<div class="margin">
-				<h1 data-anime="top">what do I know?</h1>
-				<div class="certificates_grid">
-
-					<div class="certificate1">
-						<img src="assets/htmlcssjs.png" alt="html / css / js certificate">
-						<h3>Html / Css / JavaScript - 26 hours</h3>
-					</div>
-					<div class="certificate2">
-						<img src="assets/htmlcssjs.png" alt="Firebase / Jquery / Bootstrap">
-						<h3>Firebase / Jquery / Bootstrap - 26 hours</h3>
-					</div>
-
-				</div>
-
-			</div> <!-- margin -->
-
+				</div> <!-- .gallery-grid -->
+			</div> <!-- .margin -->
 		</section>
 
 	</main>
