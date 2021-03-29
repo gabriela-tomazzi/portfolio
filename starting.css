@@ -97,12 +97,23 @@ header .header-flex {
 	width: 40%;
 }
 .header-text {
-	width: 50%;
+	width: 40%;
 	transform: translateX(10%);
 	padding: 2rem 1rem;
 
 	background-color: var(--light);
 	text-align: right;
+}
+
+.cert-grid {
+	margin-top: 1rem;
+
+	display: grid;
+	grid-template: 1fr / 1fr 1fr;
+	gap: 2rem;
+}
+.cert-grid img {
+	width: 100%;
 }
 
 #ido {
@@ -176,5 +187,10 @@ header .header-flex {
 
 	#how .how-grid {
 		grid-template: 1fr 1fr 1fr / 1fr;
+	}
+
+	.cert-grid {
+		grid-template: 1fr 1fr / 1fr;
+		padding: 0 1rem;
 	}
 }

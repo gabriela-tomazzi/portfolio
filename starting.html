@@ -12,8 +12,6 @@
 	<link href="https://fonts.googleapis.com/css2?family=Crete+Round&family=Lato&display=swap" rel="stylesheet"> 
 </head>
 <body>
-	<!-- certificates -->
-	<!-- So, what can I do for you? desktop...obs: solid with big gap, grid -->
 
 	<header>
 		<div class="margin">
@@ -21,7 +19,7 @@
 
 				<div class="links">
 					<a href="#how">How It Works?</a>
-					<a href="#gallery">Can I Help?</a>
+					<a href="#ido">Can I Help?</a>
 				</div> <!-- .links -->
 				<h3>Gabi S.<br> Tomazzi</h3>
 				<div class="call-container">
@@ -46,6 +44,17 @@
 		<section class="certificates">
 			<div class="margin">
 				<h2>What Do I Know?</h2>
+
+				<div class="cert-grid">
+					<div class="cert">
+						<img src="assets/htmlcssjs.png" alt="Html, Css and Js">
+						<h3>Html, Css and JavaScript - 26 hours</h3>
+					</div>
+					<div class="cert">
+						<img src="assets/htmlcssjs.png" alt="Firebase ,Jquery, Bootstrap">
+						<h3>Firebase ,Jquery, Bootstrap - 26 hours</h3>
+					</div>
+				</div> <!-- .cert-grid -->
 			</div> <!-- .margin -->
 		</section>
 
@@ -56,15 +65,15 @@
 				<div class="ido-grid">
 
 					<div class="ido-item">
-						<h3>Websites</h3>
-						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim provident quasi, quia maxime tempora hic.</p>
+						<h3>Maintence</h3>
+						<p>If you have a website that needs a change, or it doesn't fell right, or maybe you just would like an functionality implementation.</p>
 					</div>
 					<div class="ido-item">
 						<h3>Websites</h3>
 						<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id, ad tempore obcaecati quas rem cum doloribus cupiditate aliquid ratione animi?</p>
 					</div>
 					<div class="ido-item">
-						<h3>Websites</h3>
+						<h3>desktop Apps</h3>
 						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae veniam necessitatibus odit minus asperiores nesciunt!</p>
 					</div>
 
@@ -101,7 +110,7 @@
 	<script>
 		let d = localStorage.getItem('d');
 
-		if(d == 0) {
+		if(d == 1) {
 			document.documentElement.setAttribute('data-theme', 'dark');
 		} else {
 			document.documentElement.setAttribute('data-theme', 'light');

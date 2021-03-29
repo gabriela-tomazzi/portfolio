@@ -1,21 +1,27 @@
 let modeSwitcher = document.querySelector('#switcher');
-modeSwitcher.addEventListener('click', switchMode)
-var d = 0;
+modeSwitcher.addEventListener('click', switchMode);
+
+if (localStorage.getItem('d')) {
+	var d = localStorage.getItem('d');
+} else {
+	var d = 0;
+}
+
 
 function switchMode() {
-	if(d == 0) {
+	if(d == 1) {
 		document.documentElement.setAttribute('data-theme', 'dark');
 		modeSwitcher.textContent = 'Light Mode Switcher';
-		localStorage.setItem('d', '0');
-		d = 1;
+		localStorage.setItem('d', '1');
+		d = 0;
 	} else {
 		document.documentElement.setAttribute('data-theme', 'light');
 		modeSwitcher.textContent = 'Dark Mode Switcher';
-		localStorage.setItem('d', '1');
-		d = 0;
+		localStorage.setItem('d', '0');
+		d = 1;
 	}
 }
-
+switchMode();
 
 const target = document.querySelectorAll('[data-anime]');
 const animationClass = 'animate';
@@ -51,7 +57,7 @@ function changeLang() {
 		ps[0].innerText = 'Interruptor de Modo Dark';
 		ps[1].innerText = 'Scroll Animado';
 		ps[2].innerText = 'Animações';
-		ps[3].innerText = 'Mudança de língua(En)'
+		ps[3].innerText = 'Mudança de Língua(En)';
 		pt = 1;
 	}
 	else {
