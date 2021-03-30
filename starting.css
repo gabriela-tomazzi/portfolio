@@ -17,6 +17,7 @@ html[data-theme="dark"] {
 * {
 	margin: 0;
 	padding: 0;
+	overflow-x: hidden !important;
 }
 
 body {
@@ -198,16 +199,20 @@ header .header-flex {
 	header {
 		height: 120vh;
 	}
+	header nav {
+		height: 5rem;
+	}
 	.links {
 		display: flex;
-		align-items: center;
-		justify-content: center;
+		align-items: flex-start;
+		justify-content: flex-start;
 		flex-direction: column;
 	}
 	.call-container > a {
 		padding: 0 0.2rem;
 	}
 	header .header-flex {
+		height: 100vh;
 		flex-direction: column;
 	}
 	.header-flex img {
