@@ -233,7 +233,7 @@ header .header-flex {
 	}
 	.header-text {
 		width: 60%;
-		height: 100%;
+		height: auto;
 		padding: 1rem 2rem;
 		transform: translateX(0);
 		transform: translateY(-15%);
