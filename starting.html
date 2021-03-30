@@ -9,7 +9,7 @@
 
 	<link rel="stylesheet" href="starting.css">
 	<link rel="preconnect" href="https://fonts.gstatic.com">
-	<link href="https://fonts.googleapis.com/css2?family=Crete+Round&family=Lato&display=swap" rel="stylesheet"> 
+	<link href="https://fonts.googleapis.com/css2?family=Crete+Round&family=Source+Code+Pro&display=swap" rel="stylesheet"> 
 </head>
 <body>
 
@@ -18,19 +18,21 @@
 			<nav>
 
 				<div class="links">
-					<a href="#how">How It Works?</a>
-					<a href="#ido">Can I Help?</a>
+					<a href="#ido">How?</a>
+					<a href="#how">Contact</a>
 				</div> <!-- .links -->
-				<h3>Gabi S.<br> Tomazzi</h3>
+				<h3 class="syntax">Gabi S.<br> Tomazzi</h3>
 				<div class="call-container">
-					<a href="index.html"> <- Back</a>
+					<a href="index.html">back()</a>
 				</div>
 			</nav>
 
 			<div class="header-flex">
 				
 				<div class="header-text">
-					<h1>I can code the solution to your problem</h1>
+					<h1>I.<span class="syntax">can</span>() {</h1>
+					<h2> code the solution to your problem</h2>
+					<h1>}</h1>
 				</div>
 				<img src="assets/code.jpg" alt="My photo">
 			</div> <!-- .header-flex -->
@@ -43,7 +45,7 @@
 
 		<section class="certificates">
 			<div class="margin">
-				<h2>What Do I Know?</h2>
+				<h2 data-anime="right">What.<span class="syntax">Do</span>.I.<span class="syntax">Know</span>() {</h2>
 
 				<div class="cert-grid">
 					<div class="cert">
@@ -55,12 +57,13 @@
 						<h3>Firebase ,Jquery, Bootstrap - 26 hours</h3>
 					</div>
 				</div> <!-- .cert-grid -->
+				<h2 data-anime="right">}</h2>
 			</div> <!-- .margin -->
 		</section>
 
 		<section id="ido">
 			<div class="margin">
-				<h2>So, What can I do?</h2>
+				<h2 data-anime="right">What.<span class="syntax">Can</span>.I.<span class="syntax">Do</span>() {</h2>
 
 				<div class="ido-grid">
 
@@ -78,12 +81,13 @@
 					</div>
 
 				</div> <!-- .ido-grid -->
+				<h2 data-anime="right">}</h2>
 			</div> <!-- .margin -->
 		</section>
 
 		<section id="how">
 			<div class="margin">
-				<h2>How It Works?</h2>
+				<h2 data-anime="right">How.<span class="syntax">It</span>.Works() {</h2>
 
 				<div class="how-grid">
 
@@ -101,7 +105,31 @@
 					</div>
 
 				</div> <!-- .how-grid -->
+				<h2 data-anime="right">}</h2>
 			</div> <!-- .margin -->
+		</section>
+
+		<section id="contact">
+			<div class="margin">
+				<h2 data-anime="right"><span class="syntax">const</span> contact = {</h2>
+
+					<div class="object">
+
+						<div class="key-value" data-anime="right">
+							<h3>Email:</h3> <p>gabtomazzi@gmail.com,</p>
+						</div>
+						<div class="key-value" data-anime="right">
+							<h3>Phone:</h3> <p>+55 51 99644-2059,</p>
+						</div>
+						<div class="key-value" data-anime="right">
+							<h3>Github:</h3> <a target="_blank" href="https://github.com/gabriela-tomazzi">click.me()</a>
+						</div>
+
+					</div> <!-- .object -->
+
+				<h2 data-anime="right">}</h2>
+			</div>
+
 		</section>
 
 	</main>
@@ -116,5 +144,6 @@
 			document.documentElement.setAttribute('data-theme', 'light');
 		}
 	</script>
+	<script src="animation.js"></script>
 </body>
 </html>

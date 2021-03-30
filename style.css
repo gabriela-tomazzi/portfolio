@@ -3,14 +3,16 @@ html {
 	--light: #dfddd6;
 	--text: #253445;
 	--bold: #080808;
+	--bold-c: #357578;
 
 	scroll-behavior: smooth;
 }
 html[data-theme="dark"] {
 	--bg: #232425;
-	--light: #343739;
-	--text: #dadcde;
-	--bold: #fefcfe;
+	--light: #30302f;
+	--text: #fbf1e7;
+	--bold: #fefcee;
+	--bold-c: #7f60af;
 }
 * {
 	margin: 0;
@@ -20,7 +22,9 @@ html[data-theme="dark"] {
 body {
 	background-color: var(--bg);
 	color: var(--text);
-    font-family: 'Lato', sans-serif;
+	font-family: 'Source Code Pro', monospace;
+
+	overflow-x: hidden;
 }
 h1, h2, h3 {
 	color: var(--bold);
@@ -51,6 +55,9 @@ a {
 	max-width: 1200px;
 	margin: auto;
 	height: 100%;
+}
+.syntax {
+	color: var(--bold-c);
 }
 
 header {
@@ -167,7 +174,6 @@ header .header-flex {
 }
 #gallery h2 {
 	margin-bottom: 2rem;
-	text-align: center;
 }
 #gallery .project {
 	padding: 1rem;
@@ -185,7 +191,7 @@ header .header-flex {
 	transition: .3s;
 }
 [data-anime="right"] {
-	transform: translate3d(50px, 0, 0);
+	transform: translate3d(50px, -50px, 0);
 }
 [data-anime].animate {
 	opacity: 1;
@@ -227,6 +233,13 @@ header .header-flex {
 		padding: 1rem 2rem;
 		transform: translateX(0);
 		transform: translateY(-15%);
+	}
+
+	.offer .offer-grid {
+		grid-template-areas: "p1"
+							"p2"
+							"p3"
+							"p4";
 	}
 
 	#gallery {

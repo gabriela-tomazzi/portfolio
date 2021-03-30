@@ -9,7 +9,7 @@
 
 	<link rel="stylesheet" href="style.css">
 	<link rel="preconnect" href="https://fonts.gstatic.com">
-	<link href="https://fonts.googleapis.com/css2?family=Crete+Round&family=Lato&display=swap" rel="stylesheet"> 
+	<link href="https://fonts.googleapis.com/css2?family=Crete+Round&family=Source+Code+Pro&display=swap" rel="stylesheet">  
 </head>
 <body>
 	<header>
@@ -20,9 +20,9 @@
 					<a href="#about">About</a>
 					<a href="#gallery">Gallery</a>
 				</div> <!-- .links -->
-				<h3>Gabi S.<br> Tomazzi</h3>
+				<h3 class="syntax">Gabi S.<br> Tomazzi</h3>
 				<div class="call-container">
-					<a href="starting.html">Get started</a>
+					<a href="starting.html">Get. <span class="syntax">started</span>()</a>
 				</div>
 			</nav>
 
@@ -30,7 +30,7 @@
 
 				<img src="assets/me.jpg" alt="My photo">
 				<div class="header-text">
-					<h1>I create</h1> <h3> websites for you, so you can focus in what you are good at.</h3>
+					<h1>I. <span class="syntax">create</span>()</h1> <h3>{ websites for you, so you can focus in what you are good at }</h3>
 				</div>
 			</div> <!-- .header-flex -->
 
@@ -42,13 +42,13 @@
 
 		<section class="offer">
 			<div class="margin">
-				<h2>I'm a junior dev, and here is what I can do:</h2>
+				<h2 class="syntax">I'm a junior dev, and here is what I can do:</h2>
 				<div class="offer-grid">
 
-					<p id="switcher">Dark Mode Switcher</p>
-					<p data-anime="right">Animated Scroll</p>
-					<p>Animations</p>
-					<p>Language Change(Pt-br)</p>
+					<p id="switcher">dark.mode.switcher()</p>
+					<p data-anime="right">animated.scroll(80%)</p>
+					<p>animations()</p>
+					<p>language.change(Pt-br)</p>
 
 				</div> <!-- .offer-grid -->
 			</div> <!-- .margin -->
@@ -56,20 +56,20 @@
 
 		<section class="foryou" id="about">
 			<div class="margin">
-				<div class="foryou-text">
-					<h2>Let Me Help</h2>
-					<p>My websites can help you grow your business.</p>
+				<div class="foryou-text" data-anime="right">
+					<h2>Let.<span class="syntax">Me</span>.Help()</h2>
+					<p>{ My websites can help you grow your business.</p>
 					<p>Sometimes your business stop growing, or people stop following your social medias.</p>
 					<p>I can make something for you.</p>
-					<p>Press the button below and lets work together!</p>
-					<a href="starting.html">Get started</a>
+					<p>Press the button below and lets work together! }</p>
+					<a href="starting.html">Get.<span class="syntax">started</span>()</a>
 				</div> <!-- .foryou-text -->
 			</div> <!-- .margin -->
 		</section>
 
 		<section id="gallery">
 			<div class="margin">
-				<h2>Github Projects:</h2>
+				<h2 data-anime="right">Github.<span class="syntax">projects</span>() {</h2>
 
 				<div class="project project-dark">
 					<h3>Heiki:</h3>
@@ -96,12 +96,13 @@
 					<a href="https://gabriela-tomazzi.github.io/churrascometro/" target="_blank">Web: https://gabriela-tomazzi.github.io/churrascometro/</a> <br>
 					<a href="https://github.com/gabriela-tomazzi/churrascometro" target="_blank">Rep: https://github.com/gabriela-tomazzi/churrascometro</a>
 				</div>
-
+				<h2 data-anime="right">}</h2>
 			</div> <!-- .margin -->
 		</section>
 
 	</main>
 
 	<script src="script.js"></script>
+	<script src="animation.js"></script>
 </body>
 </html>

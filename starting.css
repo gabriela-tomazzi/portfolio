@@ -3,6 +3,7 @@ html {
 	--light: #dfddd6;
 	--text: #253445;
 	--bold: #080808;
+	--bold-c: #357578;
 
 	scroll-behavior: smooth;
 }
@@ -11,6 +12,7 @@ html[data-theme="dark"] {
 	--light: #343739;
 	--text: #dadcde;
 	--bold: #fefcfe;
+	--bold-c: #7f60af;
 }
 * {
 	margin: 0;
@@ -20,8 +22,10 @@ html[data-theme="dark"] {
 body {
 	background-color: var(--bg);
 	color: var(--text);
-    font-family: 'Lato', sans-serif;
+	font-family: 'Source Code Pro', monospace;
 	text-align: center;
+
+	overflow-x: hidden !important;
 }
 h1, h2, h3 {
 	color: var(--bold);
@@ -34,6 +38,7 @@ h1 {
 h2 {
 	font-size: 2rem;
 	line-height: 3rem;
+	text-align: left;
 }
 h3 {
 	font-size: 1.3rem;
@@ -53,6 +58,10 @@ a {
 	margin: auto;
 	height: 100%;
 }
+.syntax {
+	color: var(--bold-c);
+}
+
 
 header {
 	height: 100vh;
@@ -100,9 +109,9 @@ header .header-flex {
 	width: 40%;
 	transform: translateX(10%);
 	padding: 2rem 1rem;
+	text-align: left;
 
 	background-color: var(--light);
-	text-align: right;
 }
 
 .cert-grid {
@@ -147,6 +156,33 @@ header .header-flex {
 	background-color: var(--bg);
 }
 
+#contact {
+	padding-bottom: 7rem;
+}
+#contact .object {
+	display: grid;
+	grid-template: 1fr 1fr / 1fr;
+}
+.object .key-value {
+	text-indent: 1rem;
+	text-align: left;
+
+	display: flex;
+	align-items: center;
+}
+
+[data-anime] {
+	opacity: 0;
+	transition: .3s;
+}
+[data-anime="right"] {
+	transform: translate3d(50px, -50px, 0);
+}
+[data-anime].animate {
+	opacity: 1;
+	transform: translate3d(0px, 0px, 0px);
+}
+
 @media(max-width: 450px) {
 	html {
 		font-size: 95%;
@@ -155,9 +191,12 @@ header .header-flex {
 	h1 {
 		font-size: 2rem;
 	}
+	h2 {
+		margin-left: 1rem;
+	}
 
 	header {
-		height: 110vh;
+		height: 120vh;
 	}
 	.links {
 		display: flex;
@@ -175,7 +214,7 @@ header .header-flex {
 		width: 100%;
 	}
 	.header-text {
-		width: 60%;
+		width: 70%;
 		padding: 1rem 2rem;
 		transform: translateX(0);
 		transform: translateY(15%);
@@ -192,5 +231,12 @@ header .header-flex {
 	.cert-grid {
 		grid-template: 1fr 1fr / 1fr;
 		padding: 0 1rem;
+	}
+
+	#contact {
+		padding-bottom: 11rem;
+	}
+	.object .key-value {
+		text-indent: 1rem;
 	}
 }
