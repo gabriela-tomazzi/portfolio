@@ -1,0 +1,267 @@
+* {
+  margin: 0;
+  border: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+:root {
+  --bg: #1b1b1b;
+  --bg-lighter: #343434;
+  --bold: #fcfcfc;
+  --text: #e6e6e6;
+
+  scroll-behavior: smooth;
+}
+body {
+  font-family: 'Space mono', 'Courier New', Courier, monospace;
+  background-color: var(--bg);
+  color: var(--text);
+}
+body > * {
+  max-width: 1200px;
+  padding: 0 1rem;
+  margin: 0 auto;
+}
+h1 {
+  font-size: 6rem;
+  line-height: 1.3;
+}
+h2 {
+  font-size: 3rem;
+  line-height: 1.6;
+}
+h3 {
+  letter-spacing: 3px;
+  font-size: 1.2rem;
+  font-weight: normal;
+  text-transform: uppercase;
+}
+p, a {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+section {
+  padding: 6rem 2rem;
+}
+
+header {
+  height: 100vh;
+  padding: 3rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-self: center;
+}
+header h1 {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+}
+header div {
+  display: flex;
+  justify-content: flex-end;
+  gap: 2rem;
+}
+header div hr {
+  border: 1px solid var(--text);
+}
+
+.cores {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  grid-gap: 5rem;
+}
+.cores .cores-text p {
+  margin-top: 5rem;
+  max-width: 600px;
+}
+.cores-visualizer {
+  height: 33rem;
+
+  display: grid;
+  grid-template-areas:
+  "cinza preto"
+  "cinza preto"
+  "branco preto";
+  gap: 3rem 0;
+}
+.cores-visualizer .cor:nth-child(1) {
+  grid-area: branco;
+  background-color: var(--text);
+}
+.cores-visualizer .cor:nth-child(2) {
+  grid-area: cinza;
+  background-color: var(--bg-lighter);
+}
+.cores-visualizer .cor:nth-child(3) {
+  grid-area: preto;
+  border: 3px solid var(--bg-lighter);
+}
+
+.fontes {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 3rem;
+}
+.fontes p:first-of-type {
+  max-width: 600px;
+}
+.demonstration {
+  justify-self: end;
+  
+  display: flex;
+  gap: 4rem;
+}
+.demonstration-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.demonstration-grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 1rem 3rem;
+}
+.demonstration-grid p {
+  font-size: 1.3rem;
+}
+
+.hierarquia {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  grid-gap: 3rem;
+}
+.hierarquia-text {
+  text-align: right;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+.hierarquia-text h2 {
+  background-color: var(--text);
+  color: var(--bg);
+}
+.hierarquia-text h3 {
+  margin: .7rem 0;
+}
+.hierarquia-text p:first-of-type {
+  margin: 1rem 0 5rem;
+}
+.hierarquia-text p:last-of-type {
+  max-width: 600px;
+}
+.hierarquia-formas {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-gap: 1rem;
+}
+.hierarquia-formas div:nth-child(1) {
+  padding: .5rem;
+  border: 3px solid var(--bg-lighter);
+}
+.hierarquia-formas div:nth-child(2) {
+  padding: .5rem;
+  background-color: var(--bg-lighter);
+}
+
+[data-anime] {
+	opacity: 0;
+	transition: .3s;
+}
+[data-anime="top"] {
+	transform: translate3d(0, -50px, 0);
+}
+[data-anime].animate {
+	opacity: 1;
+	transform: translate3d(0px, 0px, 0px);
+}
+
+#contato-exemplos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+}
+#contato-exemplos > div {
+  max-width: 90vw;
+}
+#contato-exemplos h2 {
+  margin-bottom: 3rem;
+}
+.exemplos p {
+  margin: 1rem 0;
+  padding: 1rem;
+  max-width: 300px;
+}
+.link-bold {
+  color: var(--bg);
+  background-color: var(--text);
+}
+.exemplos p:not(.link-bold) {
+  border: 2px solid var(--text);
+}
+.contato .contato-formas {
+  justify-self: end;
+  align-self: end;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem 0;
+}
+.contato span {
+  max-width: 100vw;
+  margin: .7rem 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+@media (max-width: 740px) {
+  h1 {
+    font-size: 4rem;
+  }
+
+  .demonstration-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  #contato-exemplos {
+    gap: 3rem 0;
+  }
+}
+@media (max-width: 500px) {
+  h1 {
+    font-size: 2.7rem;
+  }
+  section {
+    padding: 5rem 1rem;
+  }
+
+  header {
+    padding: 3rem 1rem;
+  }
+
+  .cores-visualizer {
+    grid-template-areas:
+    "preto"
+    "preto"
+    "preto"
+    "cinza"
+    "cinza"
+    "branco";
+  }
+
+  .demonstration {
+    flex-direction: column;
+    justify-self: center;
+  }
+
+  .contato span {
+    grid-template-columns: 1fr;
+  }
+}
